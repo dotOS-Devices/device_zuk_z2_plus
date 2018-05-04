@@ -23,16 +23,16 @@ $(call inherit-product, device/zuk/z2_plus/device.mk)
 # Boot animation resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Inherit some common AOSP-OMS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common DOT stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := dot_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
 PRODUCT_MODEL := Z2 Plus
 
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=aosp_z2_plus
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=z2_plus PRODUCT_NAME=z2_plus
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
